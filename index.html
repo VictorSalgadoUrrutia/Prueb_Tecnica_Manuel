@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <h1 class="title">Sistema para iniciar Sesion</h1>
+    <!-- Formulario de login -->
+    <form action="validar.php" method="post" class="form-login">
+        <label for="username">Nombre de usuario</label>
+        <input type="text" name="usuario" id="username" placeholder="Username" required>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <br>
+    <button class="btn-register">Registrarse</button>
+    <!-- Formulario de registro -->
+    <div class="form-register-div">   
+    <h1 class="title-register">Sistema de registro</h1>
+    <form action="register.php" method="post" class="form-register">
+        <label for="username">Nombre de usuario</label>
+        <input type="text" name="usuario" id="username" placeholder="Username" required>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Completar registro">
+    </form>
+    </div>
+    
+    <!-- Formulario de edit -->
+    <div class="form-edit-div">   
+        <h1 class="title-register">Modificar usuario</h1>
+        <form action="modificar.php" method="post" class="form-edit-div">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" name="usuario" id="username" placeholder="Username" required>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="submit" value="Aceptar cambios">
+        </form>
+        </div>
+
+
+
+    <br>
+    <button class="btn-login">Iniciar Sesion</button>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
